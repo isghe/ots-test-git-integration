@@ -57,7 +57,8 @@ gpgsig -----BEGIN PGP SIGNATURE-----
 
 initial commit
 ```
-
+* `sign-test.txt` content is the above commit less the lines between `gpgsig -----BEGIN PGP SIGNATURE-----` and ` -----END OPENTIMESTAMPS GIT TIMESTAMP-----` (inclusive), plus a **carriage return** at the end;
+* `sign-test.txt.sig` content is the PGP signature in the above commit.
 ```
 ₿ gpg --verify sign-test.txt.sig
 gpg: assuming signed data in 'sign-test.txt'
